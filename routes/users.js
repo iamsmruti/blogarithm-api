@@ -3,7 +3,7 @@ const router = express.Router()
 
 import {verify} from '../middlewares/verify.js'
 
-import { getOwnInfo, getAllUsers, getUser, updateUser, deleteUser } from '../Controllers/users.js'
+import { getOwnInfo, getAllUsers, getUser, updateUser, deleteUser } from '../controllers/users.js'
 
 router.get('/', verify, getOwnInfo)
 router.get('/all',verify, getAllUsers)
