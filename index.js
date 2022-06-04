@@ -4,8 +4,6 @@ import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import dotenv from 'dotenv'
 
-// const express = require('express)  --- this we don in common js 
-
 import authRoutes from './routes/auth.js'
 import userRoutes from './routes/users.js'
 import postRoutes from './routes/posts.js'
