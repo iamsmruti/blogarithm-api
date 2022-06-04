@@ -1,7 +1,7 @@
 import express from 'express'
 const router = express.Router()
 
-import { getPosts , getPost, updatePost, deletePost , createPost} from '../Controllers/posts.js'
+import { getPosts , getPost, updatePost, deletePost , createPost} from '../controllers/posts.js'
 import {verify} from '../middlewares/verify.js'
 
 router.get('/all', getPosts)
