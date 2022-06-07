@@ -7,6 +7,7 @@ import dotenv from 'dotenv'
 import authRoutes from './routes/auth.js'
 import userRoutes from './routes/users.js'
 import postRoutes from './routes/posts.js'
+import categoryRoutes from './routes/categories.js'
 
 dotenv.config()
 const app = express()
@@ -22,6 +23,7 @@ app.use(cors())
 app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/posts', postRoutes)
+app.use('/api/categories', categoryRoutes)
 
 const URL = process.env.DB_URL
 const PORT = process.env.PORT || 4500
