@@ -61,8 +61,8 @@ After sucessfull login , a Token is generated.
 ```
 The Header should contain the TOKEN.
 
-| Key | Value     | Description |
-| :-------- | :------- | : ---------------- |
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
 | `auth-token` | `string` | Here the JWT token is entered. |
 
 This returns the information about the Logged in user using the TOKEN generated after Loggin in.
@@ -74,8 +74,8 @@ This returns the information about the Logged in user using the TOKEN generated 
 ```
 The Header should contain the TOKEN of ADMIN.
 
-| Key | Value     | Description |
-| :-------- | :------- | : ---------------- |
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
 | `auth-token` | `string` | Here the JWT token is entered. |
 
 This returns the information about all the users.
@@ -87,8 +87,8 @@ This returns the information about all the users.
 ```
 The Header should contain the TOKEN of ADMIN.
 
-| Key | Value     | Description |
-| :-------- | :------- | : ---------------- |
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
 | `auth-token` | `string` | Here the JWT token is entered. |
 
 This returns the information about a User whose ID is given in the request.
@@ -100,8 +100,8 @@ This returns the information about a User whose ID is given in the request.
 ```
 The Header should contain the TOKEN of ADMIN or the USER itself.
 
-| Key | Value     | Description |
-| :-------- | :------- | : ---------------- |
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
 | `auth-token` | `string` | Here the JWT token is entered. |
 
 This Updates a particular user.
@@ -113,8 +113,8 @@ This Updates a particular user.
 ```
 The Header should contain the TOKEN of ADMIN.
 
-| Key | Value     | Description |
-| :-------- | :------- | : ---------------- |
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
 | `auth-token` | `string` | Here the JWT token is entered. |
 
 This deletes a user.
