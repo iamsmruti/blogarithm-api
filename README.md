@@ -106,7 +106,7 @@ The Header should contain the TOKEN of ADMIN or the USER itself.
 
 This Updates a particular user.
 
-#### Get a particular user ~
+#### Delete a particular user ~
 
 ```http
   DELETE /api/users/:id
@@ -118,4 +118,71 @@ The Header should contain the TOKEN of ADMIN.
 | `auth-token` | `string` | Here the JWT token is entered. |
 
 This deletes a user.
+
+### Post Endpoints
+
+#### Create a New Post ~
+
+```http
+  POST /api/posts/
+```
+The Header should contain the Author TOKEN or Admin TOKEN.
+
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `auth-token` | `string` | Here the JWT token is entered. |
+
+This creates a New Post and saves to DataBase.
+
+#### Get all Posts ~
+
+```http
+  GET /api/posts/all
+```
+This is a Public endpoint.
+
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `-----` | `-----` | This is a public endpoint doesnt require any TOKEN |
+
+This returns the all the posts.
+
+#### Get a single POST ~
+
+```http
+  GET /api/posts/:id
+```
+This is a Public endpoint.
+
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `-----` | `-----` | This is a public endpoint doesnt require any TOKEN |
+
+This returns the a single post.
+
+#### Update a POST ~
+
+```http
+  PUT /api/posts/:id
+```
+The Header should contain the TOKEN of ADMIN or the AUTHOR.
+
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `auth-token` | `string` | Here the JWT token is entered. |
+
+This Updates a particular post.
+
+#### Delete a POST ~
+
+```http
+  DELETE /api/posts/:id
+```
+The Header should contain the TOKEN of ADMIN or AUTHOR.
+
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `auth-token` | `string` | Here the JWT token is entered. |
+
+This deletes a post.
 
