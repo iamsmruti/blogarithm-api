@@ -11,7 +11,7 @@ This is the Official API for Blogarithm. ( Routes are protected )
 
 
 ## API Reference
-Base Url - https://hello-memo-api.herokuapp.com/
+Base Url - https://blogarithm-api.herokuapp.com/
 
 ### Authentication
 
